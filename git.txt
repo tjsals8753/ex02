@@ -1,0 +1,170 @@
+
+alfmg@DESKTOP-7LAH5LH MINGW64 /
+$ git init
+C:/Users/Git/.git: Permission denied
+
+alfmg@DESKTOP-7LAH5LH MINGW64 /
+$ cd .
+
+alfmg@DESKTOP-7LAH5LH MINGW64 /
+$ pwd
+/
+
+alfmg@DESKTOP-7LAH5LH MINGW64 /
+$ cd /c/
+
+alfmg@DESKTOP-7LAH5LH MINGW64 /c
+$ cd /c/Users/alfmg/
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~
+$ pwd
+/c/Users/alfmg
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ HTML.Exam/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Oracle/
+ PrintHood@
+ Recent@
+ Sample/
+'Saved Games'/
+ Searches/
+ SendTo@
+ Templates@
+ TestData/
+ Videos/
+ Zomboid/
+ ansel/
+ apache-tomcat-8.5.83/
+ battery-report.html
+ data/
+'eclipse 20-06'/
+'eclipse 22-09'/
+ eclipse-workspace/
+'eclipse-workspace 22-09'/
+ lombok.jar
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ sqldeveloper-22.2.1.234.1810-x64/
+ sts-3.9.15.RELEASE/
+ sts-4.17.1.RELEASE/
+ workspace-spring-tool-suite-4-4.17.1.RELEASE/
+ workspace-sts-3.9.15.RELEASE/
+ 교육용.sql
+ 교육용1.sql
+ 교육용2.sql
+'새 텍스트 문서.txt'
+'시작 메뉴'@
+ 트랙29기.sql
+ 트랙29기1.sql
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~
+$ cd ^C
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~
+$ mkdir workspace
+c
+alfmg@DESKTOP-7LAH5LH MINGW64 ~
+$ cd workspace
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/workspace
+$ mkdir asdf
+c
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/workspace
+$ cd asdf
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/workspace/asdf
+$ cd ..
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/workspace
+$ cd ..
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~
+$ mv workspace newgit
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~
+$ cd newgit
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit
+$ ls
+asdf/
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit
+$ cd asdf
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf
+$ git init
+\Initialized empty Git repository in C:/Users/alfmg/newgit/asdf/.git/
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ \add
+bash: add: command not found
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git ad
+git: 'ad' is not a git command. See 'git --help'.
+
+The most similar commands are
+        add
+        am
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git add newA1
+fatal: pathspec 'newA1' did not match any files
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git add newA1.txt
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ got commit
+bash: got: command not found
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git commit -m "gitA1"
+[master (root-commit) aaa6f2d] gitA1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newA1.txt
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git remote add origin https://github.com/tjsals8753/ex02.git
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 203 bytes | 101.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tjsals8753/ex02.git
+ * [new branch]      master -> master
+
+alfmg@DESKTOP-7LAH5LH MINGW64 ~/newgit/asdf (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
